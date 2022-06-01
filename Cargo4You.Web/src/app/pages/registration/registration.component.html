@@ -1,0 +1,30 @@
+
+
+<mat-card>
+    <mat-card-title>SignIn</mat-card-title>
+<mat-card-content>
+<form #signInForm="ngForm">
+  <p>
+    <mat-form-field appearance="outline" class="inputField">
+      <input type="text" matInput placeholder="Username" [(ngModel)]="registrationData.username" required>
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field appearance="outline" class="inputField">
+      <input type="password" matInput placeholder="Password" [(ngModel)]="registrationData.password">
+    </mat-form-field>
+  </p>
+
+  <p *ngIf="error" class="error">
+    {{ error }}
+  </p>
+
+  <div class="button">
+    <button class="btn" type="submit" mat-button (click)="signIn()">SignIn</button>
+  </div>
+ 
+
+</form>
+</mat-card-content>
+</mat-card>

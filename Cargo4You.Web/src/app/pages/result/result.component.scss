@@ -1,0 +1,26 @@
+.popUpTitle {
+    padding: 2px;
+    background-color: #f0f0f085;
+    padding-left: 20px;
+  }
+  
+  .titlePopUp {
+    color: #515151;
+    padding-top: 15px;
+  
+  }
+  .popUpFoother {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f0f0f085;
+    padding: 8px;
+    gap: 5px;
+  
+  }
+  .closeButton {
+    display: flex;
+    margin-right: 10px;
+    color: #5a5a5a;
+    border-radius: 20px !important;
+  
+  }  

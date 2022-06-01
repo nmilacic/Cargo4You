@@ -1,0 +1,55 @@
+
+<mat-card>
+  <mat-icon class="icon">local_shipping</mat-icon>
+  <mat-card-title>Package dimenstion</mat-card-title>
+<mat-card-content>
+<form #inputForm="ngForm" (ngSubmit)="getPrice()">
+
+
+<p>
+  
+  <mat-form-field appearance="outline">
+    <mat-label>Width</mat-label>
+    <input matInput type="number"  placeholder="Width" [(ngModel)]="packageDimension.width" >
+ 
+  </mat-form-field>
+
+</p>
+<p>
+  
+  <mat-form-field appearance="outline">
+    <mat-label>Height</mat-label>
+    <input matInput type="number"  placeholder="Height" [(ngModel)]="packageDimension.height" >
+ 
+  </mat-form-field>
+
+</p>
+<p>
+  
+  <mat-form-field appearance="outline">
+    <mat-label>Depth</mat-label>
+    <input matInput type="number"  placeholder="Depth" [(ngModel)]="packageDimension.depth" >
+ 
+  </mat-form-field>
+
+</p>
+<p>
+  
+  <mat-form-field appearance="outline">
+    <mat-label>Weight</mat-label>
+    <input matInput type="number"  placeholder="Weight" [(ngModel)]="packageDimension.weight">
+ 
+  </mat-form-field>
+
+</p>
+<p *ngIf="error" class="error">
+  {{ error }}
+</p> 
+
+<div class="button">
+  <button class="btn" type="submit" mat-button >Calculate price</button>
+</div>
+
+</form>
+</mat-card-content>
+</mat-card>
